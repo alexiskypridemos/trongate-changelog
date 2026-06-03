@@ -69,7 +69,7 @@ The current version of the framework is documented in its [license.txt](https://
 ### Changed
 - The date-based versioning system was introduced. ([#91c85f8](https://github.com/trongate/trongate-framework/commit/91c85f83c84c0b465190c0745fabb37c86b8920d))
 - Minor changes to Trongate CSS, using variables instead of hard-coded color hex codes. ([#91c85f8](https://github.com/trongate/trongate-framework/commit/91c85f83c84c0b465190c0745fabb37c86b8920d))
-- Input validation callbacks now prevent URL access by calling the `block_url()` utility helper function. Previously, the used the underscore (`_`) prefix convention. ([#e2253a0](https://github.com/trongate/trongate-framework/commit/e2253a08857aabfaabf37e70de26c012842eb187))
+- Input validation callbacks now prevent URL access by calling the `block_url()` utility helper function. Previously, the callbacks used the underscore (`_`) prefix convention. ([#e2253a0](https://github.com/trongate/trongate-framework/commit/e2253a08857aabfaabf37e70de26c012842eb187))
 
 ## [2.0.0-beta.1] - 2026-01-20
 - Initial v2 release. Includes various breaking changes compared to v1.
