@@ -30,11 +30,13 @@ The current version of the framework is documented in its [license.txt](https://
 - The `trongate_control/flo` (FLO) code generator child module, accessible through the admin UI when in `dev` mode. ([#b644873](https://github.com/trongate/trongate-framework/commit/b644873f7e54d312044c38296f3ef67eecabe728), [#70ab01b](https://github.com/trongate/trongate-framework/commit/70ab01b0fec4dac709fb8499120dec1dbe110fbf))
 
 ### Changed
-- `Language::load()` now returns the correct array, `$phrases`. ([#226](https://github.com/trongate/trongate-framework/pull/226))
 - In Trongate CSS, made `.card-body` elements equal height in flexbox layouts. ([#8b40353](https://github.com/trongate/trongate-framework/commit/8b403536be84aa37a8e10cedd96cbcd5f6c088bd))
 
 ### Removed
 - The `trongate_administrators` `login` and `not_allowed` view files. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
+
+### Fixed
+- `Language::load()` now returns the correct array, `$phrases`. ([#226](https://github.com/trongate/trongate-framework/pull/226))
 
 ## [2.2026.0425] - 2026-04-25
 
