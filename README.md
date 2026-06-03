@@ -14,13 +14,18 @@ The current version of the framework is documented in its [license.txt](https://
 
 ## [2.2026.0505] - 2026-05-05
 
+### Added
+- The `trongate_control/flo` (FLO) code generator child module, accessible through the admin UI when in `dev` mode. ([#b644873](https://github.com/trongate/trongate-framework/commit/b644873f7e54d312044c38296f3ef67eecabe728), [#70ab01b](https://github.com/trongate/trongate-framework/commit/70ab01b0fec4dac709fb8499120dec1dbe110fbf))
+- The `trongate_administrators/setup.sql` setup file was added back. ([#98df617](https://github.com/trongate/trongate-framework/commit/98df61727af9dd2a97d5cb28d4074bc2fb8aa086)) 
+
 ### Changed
+- `Language::load()` now returns the correct array, `$phrases`. ([#226](https://github.com/trongate/trongate-framework/pull/226))
 - In Trongate CSS, made `.card-body` elements equal height in flexbox layouts. ([#8b40353](https://github.com/trongate/trongate-framework/commit/8b403536be84aa37a8e10cedd96cbcd5f6c088bd))
 
 ## [2.2026.0425] - 2026-04-25
 
 ### Added
-- The `Db->attempt_truncate()` public method attempts a `TRUNCATE` SQL statement on a table, resetting the autoincrement counter on success. ([#32cda9e](https://github.com/trongate/trongate-framework/commit/32cda9e74fff1e2b87b0677288a36a0f4820e81a))
+- The `Db::attempt_truncate()` public method attempts a `TRUNCATE` SQL statement on a table, resetting the autoincrement counter on success. ([#32cda9e](https://github.com/trongate/trongate-framework/commit/32cda9e74fff1e2b87b0677288a36a0f4820e81a))
 - A new `language` module was added to facilitate multilingual validation messages. ([#245c2c7](https://github.com/trongate/trongate-framework/commit/245c2c7e98b0eadc660c156eda7a5a792347df9a))
 
 ### Changed
@@ -35,12 +40,12 @@ The current version of the framework is documented in its [license.txt](https://
 ## [2.2026.0303] - 2026-03-03
 
 ### Added
-- The `File->delete_directory()` public method recursively deletes all files and subdirectories of a given directory. ([#24b15ac](https://github.com/trongate/trongate-framework/commit/24b15ac1812bc7cd3f1b781dc34bfa39d2baca3f))
+- The `File::delete_directory()` public method recursively deletes all files and subdirectories of a given directory. ([#24b15ac](https://github.com/trongate/trongate-framework/commit/24b15ac1812bc7cd3f1b781dc34bfa39d2baca3f))
 
 ## [2.2026.0223] - 2026-02-23
 
 ### Changed
-- `Core->invoke_controller_method()` behavior was modified to make it consistent with `block_url()` behavior. ([#b3bc943](https://github.com/trongate/trongate-framework/commit/b3bc943fa72f2445b98a7e1fdd5a091270689c45))
+- `Core::invoke_controller_method()` behavior was modified to make it consistent with `block_url()` behavior. ([#b3bc943](https://github.com/trongate/trongate-framework/commit/b3bc943fa72f2445b98a7e1fdd5a091270689c45))
 - Added `block_url('db')` to `Db.php` constructor to prevent direct URL access to all database methods. ([#b3bc943](https://github.com/trongate/trongate-framework/commit/b3bc943fa72f2445b98a7e1fdd5a091270689c45))
 - Reintroduced `resequence_ids()` method to `Db.php` from v1. ([#b3bc943](https://github.com/trongate/trongate-framework/commit/b3bc943fa72f2445b98a7e1fdd5a091270689c45))
 - The top margin on modal footer buttons was adjusted from `6` to `2` pixels. ([#9e81843](https://github.com/trongate/trongate-framework/commit/9e81843121dc2f46ae7297ee76597c4ff302272a))
