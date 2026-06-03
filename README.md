@@ -12,15 +12,29 @@ The current version of the framework is documented in its [license.txt](https://
 
 ## [2.2026.0506] - 2026-05-06
 
+### Added
+- `trongate_email` module and `trongate_email` config file. ([#21e9960](https://github.com/trongate/trongate-framework/commit/21e9960e841891ff8a05ede84327883779afecdf))
+
+### Changed
+- The `login` module sends password reminders using the `trongate_email` module. ([#21e9960](https://github.com/trongate/trongate-framework/commit/21e9960e841891ff8a05ede84327883779afecdf))
+- Updated `‎modules/trongate_control/js/code-generator.js` so that modal width and height values for the Flo module can be non-numeric.  The Query Builder modal dimensions are now approximately `96vw` by `96vh`. ([#e8f1361](https://github.com/trongate/trongate-framework/commit/e8f13611464fe2a38a7410f63cfdb2beb59e71f2))
+
+### Fixed
+- In `config.php`, `DEFAULT_MODULE` and `DEFAULT_METHOD` were set to `setup` and `index` respectively. ([#88191b4](https://github.com/trongate/trongate-framework/commit/88191b43727550cf75d69a8407ee2c51db55a0c2))
+
 ## [2.2026.0505] - 2026-05-05
 
 ### Added
+- `login` module. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
+- `setup` module. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
 - The `trongate_control/flo` (FLO) code generator child module, accessible through the admin UI when in `dev` mode. ([#b644873](https://github.com/trongate/trongate-framework/commit/b644873f7e54d312044c38296f3ef67eecabe728), [#70ab01b](https://github.com/trongate/trongate-framework/commit/70ab01b0fec4dac709fb8499120dec1dbe110fbf))
-- The `trongate_administrators/setup.sql` setup file was added back. ([#98df617](https://github.com/trongate/trongate-framework/commit/98df61727af9dd2a97d5cb28d4074bc2fb8aa086)) 
 
 ### Changed
 - `Language::load()` now returns the correct array, `$phrases`. ([#226](https://github.com/trongate/trongate-framework/pull/226))
 - In Trongate CSS, made `.card-body` elements equal height in flexbox layouts. ([#8b40353](https://github.com/trongate/trongate-framework/commit/8b403536be84aa37a8e10cedd96cbcd5f6c088bd))
+
+### Removed
+- The `trongate_administrators` `login` and `not_allowed` view files. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
 
 ## [2.2026.0425] - 2026-04-25
 
