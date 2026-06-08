@@ -8,7 +8,42 @@ The Trongate project uses the version format: `{major version}.{year}.{month}{da
 
 The current version of the framework is documented in its [license.txt](https://github.com/trongate/trongate-framework/blob/master/license.txt) file.
 
+## [Not yet assigned a version]
+
+### Added
+- `form_url()` helper and accompanying CSS to render `<input type="url">` on HTML forms. ([#231](https://github.com/trongate/trongate-framework/pull/231))
+- Trongate MX `mx-swap-title` attribute. ([#230](https://github.com/trongate/trongate-framework/pull/230))
+- `README.md` in project root. ([#224](https://github.com/trongate/trongate-framework/pull/224))
+- `Login::hash_password()` public method so other modules can reuse the same bcrypt hashing. ([#229](https://github.com/trongate/trongate-framework/pull/229))
+
+### Changed
+- Simplified the blink CSS animation. ([#223](https://github.com/trongate/trongate-framework/pull/223))
+- The `setup` `database_config` view now displays a note that the database will be created automatically. ([#227](https://github.com/trongate/trongate-framework/pull/227))
+
+### Fixed
+- Selected themes now apply properly across the admin panel. ([#223](https://github.com/trongate/trongate-framework/pull/223))
+
 ## [2.2026.0522] - 2026-05-22
+
+### Added
+- Trongate MX `mx-build-iframe` attribute. ([#ad95458](https://github.com/trongate/trongate-framework/commit/ad954589426786fddc426a83470881460cd6d238), [#574c0fa](https://github.com/trongate/trongate-framework/commit/574c0fab45211038208f61a81875aed51a30da78))
+
+### Changed
+- Disabled the `trongate_control/flo` module trigger (`Flo::draw_flow_trigger()`). ([#574c0fa](https://github.com/trongate/trongate-framework/commit/574c0fab45211038208f61a81875aed51a30da78))
+
+## [2.2026.0520] - 2026-05-20
+
+### Added
+- New SVG icons and corresponding CSS classes: `eye`, `pencil`, `search`. ([#d3be0c0](https://github.com/trongate/trongate-framework/commit/d3be0c04a90b6d5f649f248c694d855a1220f656)) 
+- `site_builder` child module of `trongate_control`. ([#a04e8ed](https://github.com/trongate/trongate-framework/commit/a04e8edaeaa53254924e092a11b56ab6d0b2443e))
+
+### Changed
+- The `tg-admin` custom route is now an alias for `login/login/tg-admin`. ([#e83e8c4](https://github.com/trongate/trongate-framework/commit/e83e8c43a2741d4f625d04688c0b27e6586b2ee6))
+- In the `login` config file, for user level `1`, a `secret_login_word` attribute was added and set to `tg-admin`, and `enable_forgot_password` was set to `false` by default. ([#e83e8c4](https://github.com/trongate/trongate-framework/commit/e83e8c43a2741d4f625d04688c0b27e6586b2ee6))
+- `Login::logout()` was modified to attempt to redirect to the user's secret word page upon logout. ([#e83e8c4](https://github.com/trongate/trongate-framework/commit/e83e8c43a2741d4f625d04688c0b27e6586b2ee6))
+
+### Fixed
+- Added missing `Login::show_404()` method. ([#67088e4](https://github.com/trongate/trongate-framework/commit/67088e47e617fd246f0485f692716ee6102aded8))
 
 ## [2.2026.0506] - 2026-05-06
 
@@ -25,7 +60,7 @@ The current version of the framework is documented in its [license.txt](https://
 ## [2.2026.0505] - 2026-05-05
 
 ### Added
-- `login` module. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
+- `login` module and `login` config file. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
 - `setup` module. ([#61ecc0a](https://github.com/trongate/trongate-framework/commit/61ecc0a07b103f4e3b5249b07bdd8fd28b7f987c))
 - The `trongate_control/flo` (FLO) code generator child module, accessible through the admin UI when in `dev` mode. ([#b644873](https://github.com/trongate/trongate-framework/commit/b644873f7e54d312044c38296f3ef67eecabe728), [#70ab01b](https://github.com/trongate/trongate-framework/commit/70ab01b0fec4dac709fb8499120dec1dbe110fbf))
 
